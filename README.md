@@ -3,7 +3,9 @@
 
 
 ###### steps
-1. download repository and exec ./install.sh 
+1. run ./install.sh 
+
+
 
 ###### links
 - https://realpython.com/vim-and-python-a-match-made-in-heaven/#lets-make-an-ide
