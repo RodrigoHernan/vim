@@ -90,7 +90,11 @@ nnoremap <C-J> <C-W><C-J>
 nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+imap <F5> <Esc>:w<CR>:!clear;python %<CR>
 
 set mouse=a
 syntax on
+
+set nocompatible
+set t_Co=256
 
