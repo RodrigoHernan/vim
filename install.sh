@@ -1,6 +1,6 @@
 sudo apt-get remove vim-tiny
 sudo apt-get update
-sudo apt-get install vim
+sudo apt-get install vim-gtk   
 
 # install plugin for install plugins 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
