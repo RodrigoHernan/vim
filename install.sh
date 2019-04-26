@@ -11,8 +11,8 @@ curl https://raw.githubusercontent.com/RodrigoHernan/vim/master/vimrc.vim --outp
 
 # install plugin autocompleteMe
 sudo apt install build-essential cmake python3-dev
-git clone https://github.com/Valloric/YouCompleteMe.git
-cd YouCompleteMe
+git clone https://github.com/Valloric/YouCompleteMe.git --output ~/.vim/bundle/
+cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 python3 install.py --clang-completer
 python3 install.py --all
