@@ -1,6 +1,13 @@
 sudo apt-get remove vim-tiny
-sudo apt-get update
-sudo apt-get install vim-gtk   
+
+# Create the directories you need
+sudo mkdir -p /opt/local/bin
+# Download, compile, and install the latest Vim
+cd ~
+git clone https://github.com/vim/vim.git && cd vim
+./configure --prefix=/opt/local --enable-python3interp=yes
+make
+sudo make install
 
 # install plugin for install plugins 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim

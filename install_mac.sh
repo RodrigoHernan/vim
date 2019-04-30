@@ -1,14 +1,14 @@
 #### install vim 
+
 # Create the directories you need
 sudo mkdir -p /opt/local/bin
 # Download, compile, and install the latest Vim
 cd ~
-hg clone https://bitbucket.org/vim-mirror/vim or git clone https://github.com/vim/vim.git
-
-cd vim
+git clone https://github.com/vim/vim.git && cd vim
 ./configure --prefix=/opt/local --enable-python3interp=yes
 make
 sudo make install
+
 # Add the binary to your path, ahead of /usr/bin
 echo 'PATH=/opt/local/bin:$PATH' >> ~/.bash_profile
 # Reload bash_profile so the changes take effect in this window
