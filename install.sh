@@ -11,6 +11,11 @@ git clone https://github.com/vim/vim.git && cd vim
 sudo make
 sudo make install
 
+# Add the binary to your path, ahead of /usr/bin
+echo 'PATH=/opt/local/bin:$PATH' >> ~/.bash_profile
+# Reload bash_profile so the changes take effect in this window
+source ~/.bash_profile
+
 # install plugin for install plugins
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
