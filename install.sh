@@ -13,6 +13,8 @@ sudo make install
 
 # Add the binary to your path, ahead of /usr/bin
 echo 'PATH=/opt/local/bin:$PATH' >> ~/.bash_profile
+echo 'PATH=/opt/local/bin:$PATH' >> ~/.bashrc
+echo 'PATH=/opt/local/bin:$PATH' >> ~/.zshrc
 # Reload bash_profile so the changes take effect in this window
 source ~/.bash_profile
 
