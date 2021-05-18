@@ -7,8 +7,10 @@
 
 
 ###### steps to install
-1. curl https://raw.githubusercontent.com/RodrigoHernan/vim/master/install.sh --output /tmp/install.sh
-2. source /tmp/install.sh 
+1. sudo apt install build-essential cmake python3-dev
+2. curl https://raw.githubusercontent.com/RodrigoHernan/vim/master/install.sh --output /tmp/install.sh
+3. chmod +x /tmp/vim_install.sh
+4. source /tmp/install.sh 
 
 
 
