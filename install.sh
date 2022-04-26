@@ -1,13 +1,16 @@
 sudo apt-get remove vim-tiny
 #pre requisites
-sudo apt-get install libncurses5-dev libncursesw5-dev
+sudo apt-get install libncurses5-dev libncursesw5-dev -y
+sudo apt-get install openbox -y
+sudo apt-get install libncurses5-dev  libgtk2.0-dev libatk1.0-dev   libcairo2-dev libx11-dev libxpm-dev libxt-dev
+
 
 # Create the directories you need
 sudo mkdir -p /opt/local/bin
 # Download, compile, and install the latest Vim
 cd ~
 git clone https://github.com/vim/vim.git && cd vim
-./configure --prefix=/opt/local --enable-python3interp=yes
+./configure --prefix=/opt/local --enable-python3interp=yes --enable-terminal  --with-features=huge --with-x=yes 
 sudo make
 sudo make install
 
