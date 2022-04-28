@@ -2,6 +2,7 @@ sudo apt-get remove vim-tiny
 #pre requisites
 sudo apt-get install libncurses5-dev libncursesw5-dev -y
 sudo apt-get install openbox -y
+# hay que revisar porque estas librerias hay algunas deprecadas
 sudo apt-get install libncurses5-dev  libgtk2.0-dev libatk1.0-dev   libcairo2-dev libx11-dev libxpm-dev libxt-dev
 
 
