@@ -1,6 +1,7 @@
 sudo apt-get remove vim-tiny
 #pre requisites
-sudo apt-get install libncurses5-dev libncursesw5-dev
+sudo apt install -y libncurses5-dev libncursesw5-dev
+sudo apt install -y build-essential cmake python3-dev git curl
 
 # Create the directories you need
 sudo mkdir -p /opt/local/bin
